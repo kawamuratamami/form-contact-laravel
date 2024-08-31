@@ -23,10 +23,14 @@
                     <input type="text" name="first_name" placeholder="例:太郎">
                 </div>
                 <div class="form__error">
-                    
+                    @error('last_name')
+                    {{ $message }}
+                    @enderror
                 </div>
                 <div class="form__error">
-                    
+                    @error('first_name')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -42,7 +46,9 @@
                     <input type="radio" name="gender" value="その他">その他
                 </div>
                 <div class="form__error">
-                    
+                    @error('gender')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -56,7 +62,9 @@
                     <input type="email" name="email" placeholder="例:test@example.com" >
                 </div>
                 <div class="form__error">
-                    
+                    @error('email')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -72,7 +80,9 @@
                     <input type="tel" name="tel" placeholder="5678" value=>
                 </div>
                 <div class="form__error">
-                    
+                    @error('tel')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -86,7 +96,9 @@
                     <input type="text" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3" >
                 </div>
                 <div class="form__error">
-                    
+                    @error('address')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -107,12 +119,14 @@
             </div>
             <div class="form__group-detail">
                 <div class="form__input--select">
-                    <select name="select" value=>
+                    <select name="detail" value=>
                         <option>選択してください</option>
                     </select>
                 </div>
                 <div class="form__error">
-                   
+                @error('detail')
+                    {{ $message }}
+                @enderror
                 </div>
             </div>
         </div>
@@ -126,7 +140,9 @@
                     <textarea name="textarea" cols="65" rows="5" value=></textarea>
                 </div>
                 <div class="form__error">
-                    
+                    @error('content')
+                        {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>

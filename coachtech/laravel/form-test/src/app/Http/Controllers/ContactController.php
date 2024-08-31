@@ -3,17 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function register()
+    public function index()
     {
-        return view('register');
+        return view('index');
     }
 
-    public function login(Request $request)
+    public function confirm(ContactRequest $request)
     {
-        $register = $request->only(['email', 'password']);
-        return view('login', ['register' => $register]);
+        $contact = $request->only(['last_name','first_name','gender', 'email', 'tel', 'address', 'building', 'detail','content']);
+        return view('confirm', ['contact' => $contact]);
+    }
+
+    public function store(ContactRequest $request)
+    {
+        $contact = $request->only(['last_name','first_name','gender', 'email', 'tel', 'address', 'building', 'detail', 'content']);
+        return view('thanks');
     }
 }

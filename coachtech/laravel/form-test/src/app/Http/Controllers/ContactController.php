@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
-use App\Http\Requests\RegisterRequest;
 use App\Models\Contact;
 
 class ContactController extends Controller
@@ -33,15 +32,5 @@ class ContactController extends Controller
     {
         $contacts = Contact::simplePaginate(5);
         return view('admin', ['contacts' => $contacts]);
-    }
-
-    public function register(RegisterRequest $request)
-    {
-        return view('register');
-    }
-
-    public function login(RegisterRequest $request)
-    {
-        return view('login', ['register' => $register]);
     }
 }

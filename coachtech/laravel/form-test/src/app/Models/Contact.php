@@ -11,12 +11,16 @@ class Contact extends Model
     protected $fillable = [
         'first_name',
         'last_name',
-        'gender',
         'email',
         'tell',
         'address',
         'building',
         'detail',
         'content',
+    ];
+    static $genders = [
+        '男性',
+        '女性',
+        'その他'
     ];
 }

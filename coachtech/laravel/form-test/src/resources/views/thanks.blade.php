@@ -13,7 +13,7 @@
 <body>
     <h1>Thank you</h1>
     <p>お問い合わせありがとうございました</p>
-    <button></button>
+    <button>HOME</button>
 </body>
 
 </html>

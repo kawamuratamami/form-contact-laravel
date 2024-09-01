@@ -16,7 +16,9 @@
             <a class="header__logo" href="/">
                 FashionablyLate
             </a>
-            <button class="header__button-submit" type="submit">login</button>
+            <form class="form" action="/register/login" method="post">
+                <button class="header__button-submit" type="submit">login</button>
+            </form>
         </div>
     </header>
 
@@ -36,7 +38,9 @@
                             <input type="text" name="name" placeholder="例: 山田太郎" />
                         </div>
                         <div class="form__error">
-                            <!--バリデーション機能を実装-->
+                            @error('name')
+                                {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -49,7 +53,9 @@
                             <input type="email" name="email" placeholder="例: test@examlple.com" />
                         </div>
                         <div class="form__error">
-                            <!--バリデーション機能を実装したら記述-->
+                            @error('email')
+                                {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -62,7 +68,9 @@
                             <input type="password" name="password" placeholder="例: coachtech1196">
                         </div>
                         <div class="from__error">
-                            <!--バリデーション機能を実装したら記述-->
+                            @error('password')
+                                {{ $message }}
+                            @enderror
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,68 @@
+.header {
+    border-bottom: 2px solid #dee7ec;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #9f7c3c;
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.header__button-submit {
+    background-color: #eddcbc;
+    color: #bca85a;
+    float: right;
+    margin: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #6a5e30;
+    font-family: serif;
+}
+
+.admin__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.admin__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #9f7c3c;
+    font-family: serif;
+}
+
+.admin-table {
+    margin: 30px auto;
+    text-align: left;
+}
+
+.admin-table__inner {
+    width: 100%;
+}
+
+.admin-table__row {
+    border: 2px solid #ddd;
+}
+
+.admin-table__header {
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    background-color: #716740;
+    color: #ddd;
+}
+
+.update-form__item-input {
+    border: none;
+}
+
+.admin-table__item {
+    padding: 12px;
+    width: 20%;
+}

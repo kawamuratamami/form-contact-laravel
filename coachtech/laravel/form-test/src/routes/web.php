@@ -20,4 +20,7 @@ Route::get('/', function () {
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
+Route::get('/admin', [ContactController::class, 'admin']);
+Route::get('/register', [ContactController::class, 'register']);
+Route::post('/register/login', [ContactController::class, '/register/login']);
 

@@ -74,13 +74,13 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
-                <div class="form__input--tel">
-                    <input type="tel" name="tel" placeholder="080" value= > -
-                    <input type="tel" name="tel" placeholder="1234" value=> -
-                    <input type="tel" name="tel" placeholder="5678" value=>
+                <div class="form__input--tell">
+                    <input type="tel" name="tell" placeholder="080" value= > -
+                    <input type="tell" name="tell" placeholder="1234" value=> -
+                    <input type="tell" name="tell" placeholder="5678" value=>
                 </div>
                 <div class="form__error">
-                    @error('tel')
+                    @error('tell')
                         {{ $message }}
                     @enderror
                 </div>
